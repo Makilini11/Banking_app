@@ -35,7 +35,7 @@ def create_customers_and_users():
     with open("customers.txt","a") as customer_file, open("users.txt","a") as user_file:
         customer_file.write(f"{customers[2]},{customers[3]}")
         user_file.write(f"{customers[0]},{customers[1]}")
-create_customers_and_users()
+#create_customers_and_users()
 #admin menu
 def Admin_menu():
     while True:
@@ -50,8 +50,8 @@ def Admin_menu():
         # print("9. Update Account Details")
         print("10. exit")
         choice=input("Enter the choice(1-10):") 
-        if choice==1:
-            print(create_customers_and_users)
+        if choice =="1":
+            create_customers_and_users()
         # elif choice==2:
         #     print(create_account)
         # elif choice==3:
@@ -68,10 +68,11 @@ def Admin_menu():
         #     print(delete_accounts)
         # elif choice==9:
         #     print(update_account_details)
-        elif choice==10:
-            print(exit)
+            # elif choice==10:
+            #     exit()
+        
 Admin_menu()       
-
+print("exit")
 
 
             
