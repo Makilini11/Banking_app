@@ -35,7 +35,7 @@ def create_customers_and_users():
     with open("customers.txt","a") as customer_file, open("users.txt","a") as user_file:
         customer_file.write(f"{customers[2]},{customers[3]}")
         user_file.write(f"{customers[0]},{customers[1]}")
-#create_customers_and_users()
+#create_customers_and_users() test
 #admin menu
 def Admin_menu():
     while True:
